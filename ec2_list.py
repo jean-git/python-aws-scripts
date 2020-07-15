@@ -6,10 +6,10 @@ __status__ = "Production"
     Script to find EC2 in AWS
     You can filter by Region 
     You can choice returned data in a table or csv format
-    Example of usaeg:
-        python.exe .\ec2_list.py 
-        python.exe .\ec2_list.py -o csv
-        python.exe .\ec2_list.py -r us-east-1
+    Example of usage:
+        python ec2_list.py 
+        python ec2_list.py -o csv
+        python ec2_list.py -r us-east-1
 """
 import datetime
 import boto3
