@@ -3,13 +3,11 @@ __maintainer__ = "Jean Carlos Bezerra"
 __email__ = "jean2104@gmail.com"
 __status__ = "Production"
 """
-    Script to find EC2 in AWS
-    You can filter by Region 
+    Script to list IAM users in AWS
     You can choice returned data in a table or csv format
     Example of usage:
-        python ec2_list.py 
-        python ec2_list.py -o csv
-        python ec2_list.py -r us-east-1
+        python users_list.py 
+        python users_list.py -o csv
 """
 import datetime
 import boto3
