@@ -17,7 +17,7 @@ import sys, argparse
 import json
 from tabulate import tabulate
 
-session = boto3.Session() # pega dados das configurações do aws cli
+session = boto3.Session() # get default configurations of aws cli
 
 def get_ec2_regions_list():
     ec2 = session.client('ec2')
