@@ -5,7 +5,7 @@
 # Install dependecies
     pip install -r requirements.txt
 
-Next, set up credentials (in e.g. ~/.aws/credentials):
+    Next, set up credentials (in e.g. ~/.aws/credentials):
     [default]
     aws_access_key_id = YOUR_KEY
     aws_secret_access_key = YOUR_SECRET
