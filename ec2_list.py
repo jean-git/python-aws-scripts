@@ -3,7 +3,7 @@ __maintainer__ = "Jean Carlos Bezerra"
 __email__ = "jean2104@gmail.com"
 __status__ = "Production"
 """
-    Script to find EC2 in AWS
+    Script to list EC2 instances in AWS
     You can filter by Region 
     You can choice returned data in a table or csv format
     Example of usage:

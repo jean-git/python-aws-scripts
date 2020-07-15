@@ -2,6 +2,10 @@
 
     Scripts to help get some informations about your infra in AWS
 
+# Scripts
+    ec2_list.py -> Script to list EC2 instances in AWS(a specific or in all regions)
+    users_list.py -> Script to list IAM users in AWS with groups, tags and count their access keys. 
+
 # Install dependecies
     pip install -r requirements.txt
 
