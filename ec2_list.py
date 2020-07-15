@@ -32,12 +32,6 @@ def get_ec2_regions_list():
     return regions
 
 
-def datetime_handler(x):
-    if isinstance(x, datetime.datetime):
-        return x.isoformat()
-    raise TypeError("Unknown type")
-
-
 def main(argv):
 
     global session
@@ -96,7 +90,7 @@ def main(argv):
             print(','.join(ec2))
     else:
         print(tabulate(ec2_infos,
-                headers="firstrow", tablefmt="pretty")
+                headers="firstrow", tablefmt="grid")
                 )
 
 
