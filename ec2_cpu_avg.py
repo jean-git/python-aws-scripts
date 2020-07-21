@@ -29,8 +29,6 @@ def get_cpu_util( instanceID, last_days = 7):
     start_time = datetime.utcnow() - timedelta(days=last_days)
     end_time = datetime.utcnow()
 
-    print("start_time",  start_time, " end_time", end_time)
-
     response = cloudwatch.get_metric_statistics(
         Namespace='AWS/EC2',
         Dimensions=[
@@ -40,7 +38,6 @@ def get_cpu_util( instanceID, last_days = 7):
             },
         ],
         MetricName="CPUUtilization",
-        #checagem a cada x minutos
         StartTime = start_time,
         EndTime = end_time,
         Period=(86400),
@@ -55,8 +52,8 @@ def get_cpu_util( instanceID, last_days = 7):
         avg += item.get('Average', 0)
     
 
-    print( "Total {0:.2f}".format(avg / tot_metrics) )
     return "{0:.2f}".format(avg / tot_metrics)
+
 
 def get_ec2_regions_list():
     ec2 = session.client('ec2')

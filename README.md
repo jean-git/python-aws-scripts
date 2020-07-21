@@ -1,6 +1,6 @@
 # python-aws-scripts
 
-    Scripts to help get some informations about your infra in AWS
+    Scripts to get some informations about your infra in AWS
 
 # Scripts
 - ec2_list.py -> Script to list EC2 instances in AWS(a specific or in all regions)
