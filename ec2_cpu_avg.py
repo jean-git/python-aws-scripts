@@ -72,9 +72,9 @@ def main(argv):
 
     global session
 
-    ec2_infos = [['Region', 'AvailabilityZone', 'InstanceId', 'InstanceType', 'PrivateDnsName', 'PublicDnsName', 'Tags', 'State', '% CPU AVG']]
-    regions = [argv.region] if argv.region != "" and argv.region != "all" else get_ec2_regions_list()
     last_days = argv.last_days
+    ec2_infos = [['Region', 'AvailabilityZone', 'InstanceId', 'InstanceType', 'PrivateDnsName', 'PublicDnsName', 'Tags', 'State', f"% CPU AVG (last {last_days} days)"]]
+    regions = [argv.region] if argv.region != "" and argv.region != "all" else get_ec2_regions_list()
 
     for region in regions:
 
