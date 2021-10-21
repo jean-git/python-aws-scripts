@@ -11,4 +11,4 @@ six==1.15.0
 tabulate==0.8.7
 toml==0.10.1
 typing-extensions==3.7.4.2
-urllib3==1.25.9
+urllib3==1.26.5
